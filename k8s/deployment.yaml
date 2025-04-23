@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: html-demo
-        image: yourdockerhubusername/html-demo:latest
+        image: sanchaym/html-demo:latest
         ports:
         - containerPort: 80
