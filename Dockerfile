@@ -1,2 +1,2 @@
-FROM tomcat:9
-COPY **/*.war /usr/local/tomcat/webapps/maven-web-app.war
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html/index.html
