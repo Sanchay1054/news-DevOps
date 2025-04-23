@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: news
+  name: html-demo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: news
+      app: html-demo
   template:
     metadata:
       labels:
-        app: news
+        app: html-demo
     spec:
       containers:
-      - name: news
-        image: sanchaym/news:latest
+      - name: html-demo
+        image: yourdockerhubusername/html-demo:latest
         ports:
         - containerPort: 80
